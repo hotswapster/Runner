@@ -9,7 +9,8 @@ import tkFont
 
 root = Tk()
 
-font = tkFont.Font (family = "Helvetica")
+font = tkFont.Font(family = "Helvetica")
+
 topFrame = Frame(root)
 topFrame.pack(side=TOP)
 
@@ -25,12 +26,20 @@ topFrame_Label.pack()
 middleFrame_Label = Label(middleFrame, text="Updates HASS configurations at the click of a button", )
 middleFrame_Label.pack()
 
-bottomFrame_Label = Label(bottomFrame, text="Click to deploy")
+bottomFrame_Label = Label(middleFrame, text="Click to deploy")
 bottomFrame_Label.pack()
 
-groupButton = Button(bottomFrame, text="Button", fg="red", bg="black")
-groupButton.pack()
+configButton = Button(middleFrame, text="Button", fg="red", bg="black")
+configButton.pack()
 
+groupsButton = Button(middleFrame, text="Button", fg="red", bg="black")
+groupsButton.pack()
+
+sensorsButton = Button(middleFrame, text="Button", fg="red", bg="black")
+sensorsButton.pack()
+
+allButton = Button(middleFrame, text="Button", fg="red", bg="black")
+allButton.pack()
 
 
 root.minsize(400, 400)
